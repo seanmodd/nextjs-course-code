@@ -12,6 +12,9 @@ function MainNavigation() {
       <div className={classes.logo}>React Meetups</div>
       <nav>
         <ul>
+        <li>
+            <Link to='/myapp'>Todo / MyApp</Link>
+          </li>
           <li>
             <Link to='/'>All Meetups</Link>
           </li>
@@ -25,6 +28,7 @@ function MainNavigation() {
                 {favoritesCtx.totalFavorites}
               </span>
             </Link>
+            
           </li>
         </ul>
       </nav>
