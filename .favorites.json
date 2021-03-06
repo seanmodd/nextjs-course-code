@@ -1,0 +1,65 @@
+[
+    {
+        "type": "Group",
+        "name": "favorites",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "SwgqleicKtXW86N4",
+        "iconColor": "rgb(255, 0, 255)"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/chakraPro",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/chakraPro",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "LldfrFgXcRE7knSx"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Backdrop.js",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Backdrop.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "5a0DRCEWvizHgTb1"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Modal.js",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Modal.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "5eifNYC3oOWSw4D7"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Todo.js",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/Todo.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "0I1cvYKAjoEs368a"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/index.js",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/index.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "swIU1SkQmTD0Rfjr"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/styles/theme.js",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/styles/theme.js",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "AwcTMPdjbiXzxoH3"
+    }
+]
