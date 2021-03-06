@@ -1,6 +1,6 @@
 {
   "extends": [
-      "airbnb"
+      "wesbos"
   ],
   "rules": {
       "no-unused-vars": 1
