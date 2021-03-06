@@ -6,17 +6,19 @@ import Modal from '../components/Modal';
 import Todo from '../components/Todo';
 import styles from '../styles/Home.module.css';
 import Navbar from '../components/chakraPro/NavbarWithRightCta/Navbar.tsx';
+import { ExampleButton } from '../components/youtube/menu/ExampleButton';
 
 export default function Home() {
   return (
     <>
-      <div className={styles.container}>
-        <div>
-          <Todo text="example 1" />
-          <Todo text="example 2" />
-          <Todo text="example 3" />
-          <Hero />
-          <Navbar />
+      <div className="sean">
+        <div className={styles.container}>
+          <div className="seanbg">
+            <Todo text="example 1" />
+            <Todo text="example 2" />
+            <Todo text="example 3" />
+            <ExampleButton />
+          </div>
         </div>
       </div>
     </>

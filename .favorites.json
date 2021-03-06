@@ -61,5 +61,14 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "AwcTMPdjbiXzxoH3"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/youtube/menu",
+        "parent_id": "SwgqleicKtXW86N4",
+        "fsPath": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/components/youtube/menu",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "TJFqpQNBDsjS4H1M"
     }
 ]

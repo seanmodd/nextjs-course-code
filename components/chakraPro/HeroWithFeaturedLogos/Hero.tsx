@@ -15,6 +15,7 @@ function Hero() {
     <Box
       as="section"
       bg={mode('gray.50', 'gray.800')}
+      opacity={1}
       pt="24"
       pb="12"
       overflow="hidden"
