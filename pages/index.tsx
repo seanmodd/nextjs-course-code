@@ -11,14 +11,12 @@ export default function Home() {
   return (
     <>
       <div className={styles.container}>
-
         <div>
           <Todo text="example 1" />
           <Todo text="example 2" />
           <Todo text="example 3" />
           <Hero />
           <Navbar />
-
         </div>
       </div>
     </>
