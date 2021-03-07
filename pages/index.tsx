@@ -1,11 +1,5 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/jsx-filename-extension */
-import Backdrop from '../components/Backdrop';
-import Hero from '../components/chakraPro/HeroWithFeaturedLogos/Hero';
-import Modal from '../components/Modal';
 import Todo from '../components/Todo';
 import styles from '../styles/Home.module.css';
-import Navbar from '../components/chakraPro/NavbarWithRightCta/Navbar.tsx';
 import { ExampleButton } from '../components/youtube/menu/ExampleButton';
 
 export default function Home() {
