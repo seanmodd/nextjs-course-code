@@ -1,5 +1,9 @@
 import * as React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import AllMeetups from '../../../pages/allmeetups';
+import NewMeetups from '../../../pages/newmeetup';
+import Favorites from '../../../pages/favorites';
 
 const variants = {
   open: {
@@ -18,18 +22,46 @@ const variants = {
   },
 };
 
-const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF'];
-
-export const MenuItem = ({ i }) => {
-  const style = { border: `2px solid ${colors[i]}` };
+const colors = '#61040a';
+const items = [
+  'TODO LIST',
+  'New Meetup',
+  'All Meetups',
+  'Favorites',
+  'Other Stuff',
+];
+const itemLinks = [
+  <AllMeetups />,
+  <NewMeetups />,
+  <Favorites />,
+  <Favorites />,
+  <Favorites />,
+];
+export const MenuItem = () => {
+  const style = { border: `2px solid ${colors}` };
+  const name = items;
+  const links = itemLinks;
   return (
     <motion.li
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className="icon-placeholder seanlist" style={style} />
-      <div className="text-placeholder seanlist" style={style} />
+      <div className="text-placeholder seanlist" style={style}>
+        <Link href="/">TODO LIST</Link>
+      </div>
+      <div className="text-placeholder seanlist" style={style}>
+        <Link href="/allmeetups">All Meetups</Link>
+      </div>
+      <div className="text-placeholder seanlist" style={style}>
+        <Link href="/newmeetup">New Meetup</Link>
+      </div>
+      <div className="text-placeholder seanlist" style={style}>
+        <Link href="/favorites">Favorites</Link>
+      </div>
+      <div className="text-placeholder seanlist" style={style}>
+        <Link href="/othershit">Other Shit</Link>
+      </div>
     </motion.li>
   );
 };

@@ -1,45 +1,73 @@
 import * as React from 'react';
-import { useRef } from 'react';
-import { motion, useCycle } from 'framer-motion';
-import { useDimensions } from './use-dimensions';
-import { MenuToggle } from './MenuToggle';
-import { Navigation } from './Navigation';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import AllMeetups from '../../../pages/allmeetups';
+import NewMeetups from '../../../pages/newmeetup';
+import Favorites from '../../../pages/favorites';
 
-const sidebar = {
-  open: (height = 1000) => ({
-    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+const variants = {
+  open: {
+    y: 0,
+    opacity: 1,
     transition: {
-      type: 'spring',
-      stiffness: 20,
-      restDelta: 2,
+      y: { stiffness: 1000, velocity: -100 },
     },
-  }),
+  },
   closed: {
-    clipPath: 'circle(30px at 40px 40px)',
+    y: 50,
+    opacity: 0,
     transition: {
-      delay: 0.5,
-      type: 'spring',
-      stiffness: 400,
-      damping: 40,
+      y: { stiffness: 1000 },
     },
   },
 };
 
+const colors = '#61040a';
+const items = [
+  'TODO LIST',
+  'New Meetup',
+  'All Meetups',
+  'Favorites',
+  'Other Stuff',
+];
+const itemLinks = [
+  <AllMeetups />,
+  <NewMeetups />,
+  <Favorites />,
+  <Favorites />,
+  <Favorites />,
+];
 export const ExampleButton = () => {
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
-
+  const style = { border: `2px solid ${colors}` };
+  const name = items;
+  const links = itemLinks;
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? 'open' : 'closed'}
-      custom={height}
-      ref={containerRef}
-    >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation />
-      <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+    <>
+      <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <div className="text-placeholder seanlist" style={style}>
+          <Link href="/">TODO LIST</Link>
+        </div>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <div className="text-placeholder seanlist" style={style}>
+          <Link href="/allmeetups">All Meetups</Link>
+        </div>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <div className="text-placeholder seanlist" style={style}>
+          <Link href="/newmeetup">New Meetup</Link>
+        </div>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <div className="text-placeholder seanlist" style={style}>
+          <Link href="/favorites">Favorites</Link>
+        </div>
+      </motion.li>
+      <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+        <div className="text-placeholder seanlist" style={style}>
+          <Link href="/othershit">Other Shit</Link>
+        </div>
+      </motion.li>
+    </>
   );
 };
