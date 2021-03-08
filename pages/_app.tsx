@@ -1,16 +1,15 @@
 import { ChakraProvider, Flex, Button } from '@chakra-ui/react';
 import '../styles/globals.css';
 import customTheme from '../styles/theme';
-import { ExampleButton } from '../components/youtube/menu/ExampleButton';
+import { ExampleButton } from '../components/ExampleButton';
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <ChakraProvider resetCSS theme={customTheme}>
         <ExampleButton />
-        <Flex direction="column">
+        <Flex alignItems="center" justifyContent="center" direction="column">
           <Component {...pageProps} />
-          <Button />
         </Flex>
       </ChakraProvider>
     </>

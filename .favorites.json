@@ -22,5 +22,45 @@
         "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
         "workspacePath": "styles/theme.tsx",
         "id": "t6KvnL4xDXNEZJ38"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/allmeetups.tsx",
+        "parent_id": null,
+        "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
+        "workspacePath": "pages/allmeetups.tsx",
+        "id": "a3mykgxUC5uLYqXl"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/newmeetup.tsx",
+        "parent_id": null,
+        "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
+        "workspacePath": "pages/newmeetup.tsx",
+        "id": "F5t9XbA3nOqMjkNr"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/othershit.tsx",
+        "parent_id": null,
+        "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
+        "workspacePath": "pages/othershit.tsx",
+        "id": "R9PuMW5kNbyil8pj"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/favorites.tsx",
+        "parent_id": null,
+        "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
+        "workspacePath": "pages/favorites.tsx",
+        "id": "s1GYC5n6PAtgMF7c"
+    },
+    {
+        "type": "File",
+        "name": "/Users/seanmodd/Development/2021/learn/nextjs-course-code/pages/_app.tsx",
+        "parent_id": null,
+        "workspaceRoot": "/Users/seanmodd/Development/2021/learn/nextjs-course-code",
+        "workspacePath": "pages/_app.tsx",
+        "id": "cdZFfN21GsSohpjE"
     }
 ]
