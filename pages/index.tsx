@@ -1,3 +1,4 @@
+import LoginForm from '../components/formik/LoginForm';
 import Todo from '../components/Todo';
 import styles from '../styles/Home.module.css';
 
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="sean">
         <div className={styles.container}>
           <div className="seanbg">
+            <LoginForm />
             <Todo text="example 1" />
             <Todo text="example 2" />
             <Todo text="example 3" />

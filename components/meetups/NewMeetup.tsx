@@ -1,23 +1,27 @@
-import { Button } from '@chakra-ui/button';
-import { FormControl } from '@chakra-ui/form-control';
-import { Input } from '@chakra-ui/input';
-import { Heading, Text } from '@chakra-ui/layout';
-import { Textarea } from '@chakra-ui/textarea';
+import { Heading } from '@chakra-ui/layout';
+import { useHistory } from 'next/history';
+import NewMeetupForm from './NewMeetupForm';
 
-function NewMeetup(props) {
+function NewMeetup() {
+  // const history = useHistory();
+  function addMeetupHandler(meetupData) {
+    fetch(
+      'https://nextjscourseseanmodd-default-rtdb.firebaseio.com/meetupssean.json',
+      {
+        method: 'POST',
+        body: JSON.stringify(meetupData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+  }
   return (
     <>
-      <Heading>Add New Meetup</Heading>
-      <FormControl w="50%" isRequired>
-        <Input m={3} type="text" placeholder="The Title" />
-        <Input m={3} type="url" placeholder="Image URL" />
-        <Input m={3} type="text" placeholder="Location of Picture" />
-        <Textarea m={3} type="text" placeholder="Description of Picture" />
-        <Button m={10} colorScheme="twitter" size="lg">
-          Submit
-        </Button>
-      </FormControl>
+      <Heading>New Meetup PAGE!</Heading>
+      <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </>
   );
 }
+
 export default NewMeetup;
