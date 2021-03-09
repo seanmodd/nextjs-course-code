@@ -5,7 +5,7 @@ import { Flex } from '@chakra-ui/layout';
 
 const colors = '#61040a';
 
-export const ExampleButton = () => {
+function ExampleButton() {
   const style = { border: `1px solid ${colors}` };
 
   return (
@@ -18,31 +18,32 @@ export const ExampleButton = () => {
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/allmeetups">All Meetups</Link>
+            <Link href="/old/allmeetups">All Meetups</Link>
           </div>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/newmeetup">New Meetup</Link>
+            <Link href="/old/newmeetup">New Meetup</Link>
           </div>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/favorites">Favorites</Link>
+            <Link href="/old/favorites">Favorites</Link>
           </div>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/othershit">Other Shit</Link>
+            <Link href="/old/othershit">Other Shit</Link>
           </div>
         </motion.li>
 
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/framermotion">framermotion</Link>
+            <Link href="/old/framermotion">framermotion</Link>
           </div>
         </motion.li>
       </Flex>
     </>
   );
-};
+}
+export default ExampleButton;

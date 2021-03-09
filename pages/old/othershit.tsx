@@ -1,5 +1,6 @@
 import { Flex } from '@chakra-ui/layout';
-import LoginForm from '../components/formik/LoginForm';
+import LoginForm from '../../components/old/formik/LoginForm';
+
 import styles from '../styles/Home.module.css';
 
 export default function othershit() {

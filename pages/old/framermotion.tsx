@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Link from 'next/link';
-import Footer from '../components/framer/Footer';
+import Footer from '../../components/old/framer/Footer';
 
 const defaultEndpoint = `https://rickandmortyapi.com/api/character/`;
 
