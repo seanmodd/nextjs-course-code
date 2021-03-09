@@ -36,6 +36,12 @@ export const ExampleButton = () => {
             <Link href="/othershit">Other Shit</Link>
           </div>
         </motion.li>
+
+        <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+          <div className="text-placeholder seanlist" style={style}>
+            <Link href="/framermotion">framermotion</Link>
+          </div>
+        </motion.li>
       </Flex>
     </>
   );

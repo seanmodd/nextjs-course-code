@@ -6,4 +6,3 @@ function Backdrop(props) {
   return <div className="backdrop" onClick={backdropHandler} />;
 }
 export default Backdrop;
-
