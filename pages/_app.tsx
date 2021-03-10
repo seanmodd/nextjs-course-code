@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import customTheme from '../styles/theme';
 import ExampleButton from '../components/old/ExampleButton';
 import styles from '../styles/Home.module.css';
+import Layout from '../components/layout/Layout.tsx';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -10,9 +11,11 @@ function MyApp({ Component, pageProps }) {
       <ChakraProvider resetCSS theme={customTheme}>
         <ExampleButton />
         <Flex alignItems="center" justifyContent="center" direction="column">
-          <div className={styles.container}>
-            <Component {...pageProps} />
-          </div>
+          <Layout>
+            <div className={styles.container}>
+              <Component {...pageProps} />
+            </div>
+          </Layout>
         </Flex>
       </ChakraProvider>
     </>

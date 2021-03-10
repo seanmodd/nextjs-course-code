@@ -1,22 +1,26 @@
+body {
+  margin: 0;
+}
+
 .btn {
   font: inherit;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
   border-radius: 4px;
-  background-color: #800040;
+  background-color: #001277;
   color: white;
-  border: 1px solid #800040;
+  border: 1px solid #001277;
   margin: 0 1rem;
 }
 
 .btn:hover {
-  background-color: #9c1458;
-  border-color: #9c1458;
+  background-color: #3452ff;
+  border-color: #3452ff;
 }
 
 .btn--alt {
   background-color: transparent;
-  color: #800040;
+  color: #212da0;
 }
 
 .btn--alt:hover {

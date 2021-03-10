@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-filename-extension */
 import MeetupItem from './MeetupItem';
 import classes from './MeetupList.module.css';
 

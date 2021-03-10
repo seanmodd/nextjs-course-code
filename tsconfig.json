@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/meetups/MeetupItem.js", "components/meetups/MeetupList.js", "components/meetups/NewMeetupForm.js"  ],
+, "components/meetups/MeetupItem.tsx", "components/meetups/MeetupList.tsx", "components/meetups/NewMeetupForm.tsx", "components/layout/Layout.ssx"  ],
   "exclude": [
     "node_modules"
   ]

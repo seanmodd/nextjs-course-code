@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Flex } from '@chakra-ui/layout';
 
-const colors = '#61040a';
+const colors = '#001277';
 
 function ExampleButton() {
   const style = { border: `1px solid ${colors}` };
@@ -13,7 +13,12 @@ function ExampleButton() {
       <Flex>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/">TODO LIST</Link>
+            <Link href="/">Home</Link>
+          </div>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+          <div className="text-placeholder seanlist" style={style}>
+            <Link href="/old">TODO LIST</Link>
           </div>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>

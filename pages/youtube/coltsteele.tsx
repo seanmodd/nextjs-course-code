@@ -1,7 +1,7 @@
 import { Heading } from '@chakra-ui/layout';
-import MeetupList from '../components/meetups/MeetupList';
+import MeetupList from '../../components/meetups/MeetupList';
 
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 
 export default function Home() {
   const DUMMY_MEETUPS = [
