@@ -1,20 +1,24 @@
+import { Flex, Heading, HStack, Stack, VStack } from '@chakra-ui/layout';
 import Link from 'next/Link';
 import classes from './MainNavigation.module.css';
 
 function MainNavigation() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>React Meetups</div>
-      <nav>
-        <ul>
-          <li>
+      <Stack mt={0}>
+        <Heading align="center" mt={3} textColor="white" fontWeight="normal">
+          React Meetups
+        </Heading>
+        <nav>
+          <HStack mb={5} justifyContent="space-between">
             <Link href="/">All Meetups</Link>
-          </li>
-          <li>
+
             <Link href="/new-meetup">Add New Meetup</Link>
-          </li>
-        </ul>
-      </nav>
+
+            <Link href="/favorites">Favorites</Link>
+          </HStack>
+        </nav>
+      </Stack>
     </header>
   );
 }

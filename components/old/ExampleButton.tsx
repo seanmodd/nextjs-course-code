@@ -6,14 +6,19 @@ import { Flex } from '@chakra-ui/layout';
 const colors = '#001277';
 
 function ExampleButton() {
-  const style = { border: `1px solid ${colors}` };
+  const style = { border: `3px solid ${colors}` };
 
   return (
     <>
-      <Flex>
+      <Flex flexDirection="row">
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
             <Link href="/">Home</Link>
+          </div>
+        </motion.li>
+        <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
+          <div className="text-placeholder seanlist" style={style}>
+            <Link href="/youtube">Checkout Cart</Link>
           </div>
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
@@ -26,6 +31,8 @@ function ExampleButton() {
             <Link href="/old/allmeetups">All Meetups</Link>
           </div>
         </motion.li>
+      </Flex>
+      <Flex flexDirection="row">
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
             <Link href="/old/newmeetup">New Meetup</Link>
@@ -38,7 +45,7 @@ function ExampleButton() {
         </motion.li>
         <motion.li whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
           <div className="text-placeholder seanlist" style={style}>
-            <Link href="/old/othershit">Other Shit</Link>
+            <Link href="/old/othershit">Formik Login Form</Link>
           </div>
         </motion.li>
 

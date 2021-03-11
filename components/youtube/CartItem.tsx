@@ -16,7 +16,9 @@ function CartItem({ id, name, price, qty, updateQty }) {
         <Text>${price}</Text>
 
         <Text>
-          <button onClick={subtractOne}>-</button>
+          <button onClick={subtractOne} disabled={qty <= 1}>
+            -
+          </button>
           {qty} <button onClick={addOne}>+</button>
         </Text>
 
