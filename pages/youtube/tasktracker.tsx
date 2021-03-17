@@ -29,6 +29,7 @@ import { useToggle } from '../../components/hooks/useToggle';
 import Task from '../../components/traversy/Task';
 import Tasks from '../../components/traversy/Tasks';
 import AddTask from '../../components/traversy/AddTask';
+import FormButton from '../../components/traversy/FormButton';
 
 function toggle() {
   const [tasks, setTasks] = useState([
@@ -61,13 +62,27 @@ function toggle() {
       )
     );
   };
+
+  // Show Form!
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1;
+    const newTask = { id, ...task };
+    setTasks([...tasks, newTask]);
+  };
+  const [showForm, setShowForm] = useState(false);
   return (
     <>
       <VStack>
-        <Heading fontWeight="500" m={10}>
+        <Heading fontWeight="500" mt={10} mb={4}>
           The Task Tracker App
-        </Heading>
-        <AddTask />
+        </Heading>{' '}
+        <FormButton onAdd={() => setShowForm(!showForm)} showAdd={showForm} />
+        {tasks.length > 0 && (
+          <Heading fontSize={28} fontWeight="300">
+            {tasks.length} tasks!
+          </Heading>
+        )}
+        {showForm && <AddTask onAdd={addTask} />}
         {tasks.length > 0 ? (
           <Tasks
             tasks={tasks}
