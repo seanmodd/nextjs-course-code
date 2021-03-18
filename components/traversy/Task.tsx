@@ -9,7 +9,7 @@ const Task = ({ task, onDelete, onToggle }) => (
     <Flex
       align="center"
       w="800px"
-      bg="gray.50"
+      bg="gray.800"
       className={
         (classes.seanFlex,
         task.reminder ? classes.contact : classes.othercontact)
@@ -17,7 +17,7 @@ const Task = ({ task, onDelete, onToggle }) => (
     >
       <VStack>
         <HStack>
-          <Text ml={10}  fontWeight="normal">
+          <Text ml={10} fontWeight="normal">
             {task.text}
           </Text>
           <Button
@@ -33,7 +33,12 @@ const Task = ({ task, onDelete, onToggle }) => (
         </HStack>
         <Text m={1}>{task.day} </Text>
         {task.reminder && (
-          <Heading mb={15} textColor="red.500" fontSize={20} fontWeight="normal">
+          <Heading
+            mb={15}
+            textColor="red.500"
+            fontSize={20}
+            fontWeight="normal"
+          >
             This is important!
           </Heading>
         )}
